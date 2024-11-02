@@ -17,7 +17,12 @@ const spaceGroteskFont = localFont({
 
 export const metadata: Metadata = {
   title: "DevOverflow",
-  description: "StackOverflow on steroids",
+  description:
+    "Welcome to DevOverflow, where coding questions get supercharged!" +
+    "Dive into a lively community that's all about boosting your developer game." +
+    'With turbocharged Q&A, epic tutorials, and a dash of fun, you\'ll find answers faster than you can say "debug."' +
+    "Whether you're a newbie or a code ninja, join us and level up your skills like never before!",
+  icons: { icon: "/images/site-logo.svg" },
 };
 
 export default function RootLayout({
