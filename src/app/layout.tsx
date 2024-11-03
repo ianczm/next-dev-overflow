@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import React from "react";
 
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 import ThemeProvider from "@/context/Theme";
 
 const interFont = localFont({
@@ -45,6 +46,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

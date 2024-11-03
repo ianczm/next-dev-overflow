@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 
 import Navbar from "@/components/navigation/navbar";
 
-const RootLayout = ({ children }: { children: ReactNode }) => {
+const BaseLayout = ({ children }: { children: ReactNode }) => {
   return (
     <main>
       <Navbar />
@@ -11,4 +11,4 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default RootLayout;
+export default BaseLayout;
