@@ -14,9 +14,7 @@ export default async function Home() {
           "use server";
           await signOut({ redirectTo: ROUTES.SIGN_IN });
         }}
-      >
-        <Button type="submit">Sign Out</Button>
-      </form>
+      ></form>
     </>
   );
 }
