@@ -40,7 +40,7 @@ const RootLayout = async ({
     <html lang="en" suppressHydrationWarning>
       <SessionProvider session={session}>
         <body
-          className={`${interFont.className} ${spaceGroteskFont.variable} bg-light-900 antialiased dark:bg-dark-100`}
+          className={`${interFont.className} ${spaceGroteskFont.variable} background-light850_dark100 antialiased`}
         >
           <ThemeProvider
             attribute="class"
