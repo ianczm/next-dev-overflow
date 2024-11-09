@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SessionProvider } from "next-auth/react";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
@@ -40,7 +40,7 @@ const RootLayout = async ({
     <html lang="en" suppressHydrationWarning>
       <SessionProvider session={session}>
         <body
-          className={`${interFont.className} ${spaceGroteskFont.variable} antialiased`}
+          className={`${interFont.className} ${spaceGroteskFont.variable} bg-light-900 antialiased dark:bg-dark-100`}
         >
           <ThemeProvider
             attribute="class"

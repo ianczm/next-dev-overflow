@@ -10,13 +10,11 @@ const BaseLayout = ({ children }: { children: ReactNode }) => {
       <div className="relative col-span-full grid grid-cols-subgrid overflow-y-scroll">
         {/* leftbar */}
         <div className="relative hidden sm:block">
-          <div className="fixed size-full max-w-[270px] bg-cyan-300">
-            Leftbar
-          </div>
+          <div className="fixed size-full max-w-[270px]">Leftbar</div>
         </div>
 
         {/* content */}
-        <div className="relative bg-red-300 sm:col-span-2 xl:col-span-1">
+        <div className="relative sm:col-span-2 xl:col-span-1">
           <div className="h-[1000px]">
             <div>Content</div>
             {children}
@@ -25,9 +23,7 @@ const BaseLayout = ({ children }: { children: ReactNode }) => {
 
         {/* rightbar */}
         <div className="relative hidden xl:block">
-          <div className="fixed size-full max-w-[270px] bg-blue-300">
-            Rightbar
-          </div>
+          <div className="fixed size-full max-w-[270px]">Rightbar</div>
         </div>
       </div>
     </main>
