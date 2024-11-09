@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import DevOverflowLogoLink from "@/components/branding/DevOverflowLogoLink";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -30,18 +31,7 @@ const MobileNavigation = () => {
         className="background-light900_dark200 border-none"
       >
         <SheetTitle className="hidden">Navigation</SheetTitle>
-
-        <Link href="/" className="flex items-center gap-1">
-          <Image
-            src="/images/site-logo.svg"
-            alt="DevOverflow Logo"
-            width={24}
-            height={24}
-          />
-          <span className="h2-bold font-space-grotesk text-dark-100 dark:text-light-900">
-            Dev<span className="text-primary-500">Overflow</span>
-          </span>
-        </Link>
+        <DevOverflowLogoLink />
 
         <div className="no-scrollbar flex h-[calc(100vh-80px)] flex-col justify-between overflow-y-auto">
           <SheetClose asChild>
