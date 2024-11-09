@@ -1,17 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ComponentProps } from "react";
 
 import { cn } from "@/lib/utils";
 
-interface DevOverflowLogoLinkProps {
+interface DevOverflowLogoLinkProps extends ComponentProps<"a"> {
   hideTextOnMobile?: boolean;
 }
 
 const DevOverflowLogoLink = ({
+  className,
   hideTextOnMobile = false,
+  ...props
 }: DevOverflowLogoLinkProps) => {
   return (
-    <Link href="/" className="flex items-center gap-1">
+    <Link
+      href="/"
+      className={cn("flex items-center gap-1", className)}
+      {...props}
+    >
       <Image
         src="/images/site-logo.svg"
         alt="DevOverflow Logo"
