@@ -10,7 +10,7 @@ const Navbar = ({ className, ...props }: ComponentProps<"nav">) => {
   return (
     <nav
       className={cn(
-        "sm:grid sm:grid-cols-subgrid flex justify-between items-center background-light900_dark200 gap-5 p-6 shadow-light-300 dark:shadow-none sm:px-12",
+        "lg:grid lg:grid-cols-subgrid flex justify-between items-center background-light900_dark200 gap-5 p-6 shadow-light100_dark100 sm:px-12 border-b light-border",
         className
       )}
       {...props}

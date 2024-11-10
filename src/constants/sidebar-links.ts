@@ -38,7 +38,7 @@ const SIDEBAR_LINKS: SidebarLink[] = [
   {
     imageSrc: "/icons/question.svg",
     route: "/ask-question",
-    label: "Ask a question",
+    label: "Ask a Question",
   },
 ];
 
